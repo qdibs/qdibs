@@ -1,0 +1,141 @@
+body {
+    background-image: radial-gradient( circle farthest-corner at 10% 20%, rgba(43,41,63,1) 7.8%, rgba(231,36,76,1) 90% );
+}
+
+button {
+    font-size: 15px;
+    font-weight: 700;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 20%;
+    height: 40px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 15px;
+    border-color: black;
+    border-style: solid;
+}
+
+button:hover {
+    background-color: rgb(102, 102, 102);
+}
+
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 15%;
+    border-radius: 20px;
+    border-color: rgb(0, 0, 0);
+    border-style: solid;
+    border-width: 3px;
+}
+
+h1 {
+    color: rgb(0, 0, 0);
+    text-align: center;
+    font-size: 50px;
+
+}
+
+h2 {
+    color: rgb(255, 255, 255);
+    text-align: left;
+    font-size: 30px;
+}
+
+h3 {
+    color: rgb(0, 0, 0);
+    text-align: center;
+    font-size: 15px;
+}
+
+p {
+    color: rgb(255, 255, 255);
+    text-align: left;
+    font-size: 20px;
+}
+
+.Start {
+    margin-left: 15%;
+    margin-right: 15%;
+}
+
+.About {
+    margin-left: 15%;
+    margin-right: 15%;
+}
+
+.Skills {
+    margin-left: 15%;
+    margin-right: 15%;
+}
+
+ul,li {
+    list-style: none; padding: 0
+}
+.container-flex {
+    /* Define as a flex container, centering its descendents */
+    display: flex; 
+    justify-content: center; align-items: center;
+    height: 100%; width: auto
+}
+
+/* Any direct descendent will resize (not only UL works) */
+.img-list-flex {
+    /* Define as a flex container, centering its descendents */
+    display: inline-flex; flex-flow: row wrap;
+    justify-content: center; align-items: center; align-content: center;
+    /* 1/3 of viewport width */
+    width: calc(100vw/3); 
+    height: calc(100vw/3); 
+    padding-right: 10px;
+    padding-bottom: 10px;
+}
+
+/* Any direct descendent will resize (not only LI works) */
+.img-list-flex > * {
+    /* 1/3 of parent width minus 3 x 2 x 2px margin */
+    width:  calc(100%/3 - 12px);
+    height: calc(100%/3 - 12px); 
+    padding-right: 12px;
+    padding-bottom: 15px;
+    max-width: 200px;
+    max-height: 200px;
+    overflow: hidden;
+}
+/* if an img-list-flex item contains an image, then */
+.img-list-flex > * > img {
+    min-width: 100%; /* stretch smaller images */
+    max-width: 100%; /* shrink larger images */
+    height: auto;    /* adjust image height accordingly */
+}
+
+.Portfolio {
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.w3-container {
+    width: 100%;
+}
+
+.w3-card-4 {
+    display: inline-flex;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 35px;
+    vertical-align: middle;
+}
+
+.Contact {
+    margin-left: 10%;
+    margin-right: 10%;
+    padding-bottom: 2%;
+}
+
+.links {
+    display: flex;
+}
+
+
